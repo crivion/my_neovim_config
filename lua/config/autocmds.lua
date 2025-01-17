@@ -9,6 +9,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
+-- Keep cursor position across files / buffers
 vim.api.nvim_create_autocmd("BufRead", {
 	group = vim.api.nvim_create_augroup("RestoreCursor", { clear = true }),
 	callback = function()
