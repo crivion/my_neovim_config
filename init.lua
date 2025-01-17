@@ -7,6 +7,9 @@ require("config/schedules")
 -- [[ Functions / Utilities ]]
 require("config/functions")
 
+-- [[ Autocommands ]]
+require("config/autocmds")
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -21,25 +24,25 @@ vim.opt.rtp:prepend(lazypath)
 
 -- [[ Configure and install plugins ]]
 require("lazy").setup({
-    spec = {
-        -- Include all plugin files from the plugins/ folder
-        { import = "plugins" },
-    },
-    defaults = { lazy = false },
-    install = { missing = true },
-    ui = { border = "rounded" },
-    performance = {
-        rtp = {
-            disabled_plugins = {
-                "gzip",
-                "matchit",
-                "matchparen",
-                "netrwPlugin",
-                "tarPlugin",
-                "tohtml",
-                "tutor",
-                "zipPlugin",
-            },
-        },
-    },
+	spec = {
+		-- Include all plugin files from the plugins/ folder
+		{ import = "plugins" },
+	},
+	defaults = { lazy = false },
+	install = { missing = true },
+	ui = { border = "rounded" },
+	performance = {
+		rtp = {
+			disabled_plugins = {
+				"gzip",
+				"matchit",
+				"matchparen",
+				"netrwPlugin",
+				"tarPlugin",
+				"tohtml",
+				"tutor",
+				"zipPlugin",
+			},
+		},
+	},
 })
