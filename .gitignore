@@ -1,0 +1,3 @@
+# Ignore macOS and Lazy.nvim files
+.DS_Store
+lazy-lock.json
