@@ -108,3 +108,6 @@ vim.api.nvim_set_keymap("n", "<S-Tab>", ":BufferLineCycleNext<CR>", { noremap = 
 vim.api.nvim_set_keymap("n", "]b", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "[b", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", ";p", ":bprev<CR>", { noremap = true, silent = true })
+
+-- find next with f(x) or t(x)
+vim.api.nvim_set_keymap("n", ";n", ";", { noremap = true, silent = true })
