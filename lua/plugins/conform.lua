@@ -43,7 +43,6 @@ return {
 			json = { "jq", stop_after_first = true },
 			javascript = { "prettierd", stop_after_first = true },
 			jsx = { "prettierd", stop_after_first = true },
-			php = { "pretty-php", stop_after_first = true },
 		},
 	},
 }
