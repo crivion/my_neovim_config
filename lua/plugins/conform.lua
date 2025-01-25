@@ -14,7 +14,7 @@ return {
 		},
 	},
 	opts = {
-		notify_on_error = false,
+		notify_on_error = true,
 		format_on_save = function(bufnr)
 			-- Disable "format_on_save lsp_fallback" for languages that don't
 			-- have a well standardized coding style. You can add additional
@@ -37,7 +37,13 @@ return {
 			-- python = { "isort", "black" },
 			--
 			-- You can use 'stop_after_first' to run the first available formatter from the list
-			-- javascript = { "prettierd", "prettier", stop_after_first = true },
+			html = { "prettierd", stop_after_first = true },
+			css = { "prettierd", stop_after_first = true },
+			blade = { "blade-formatter", stop_after_first = true },
+			json = { "jq", stop_after_first = true },
+			javascript = { "prettierd", stop_after_first = true },
+			jsx = { "prettierd", stop_after_first = true },
+			php = { "pretty-php", stop_after_first = true },
 		},
 	},
 }

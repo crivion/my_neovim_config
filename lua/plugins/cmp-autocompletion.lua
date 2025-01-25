@@ -34,6 +34,7 @@ return { -- Autocompletion
 		--  into multiple repos for maintenance purposes.
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
+		"hrsh7th/cmp-buffer",
 	},
 	config = function()
 		-- See `:help cmp`
@@ -108,6 +109,7 @@ return { -- Autocompletion
 					group_index = 0,
 				},
 				{ name = "nvim_lsp" },
+				{ name = "buffer" },
 				{ name = "luasnip" },
 				{ name = "path" },
 				-- { name = 'codeium' },

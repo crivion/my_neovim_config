@@ -1,6 +1,9 @@
 return {
 	{
 		"jwalton512/vim-blade",
+		config = function()
+			vim.g.blade_indent = 4
+		end,
 	},
 	{
 		"ricardoramirezr/blade-nav.nvim",
