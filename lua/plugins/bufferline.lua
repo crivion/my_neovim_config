@@ -3,6 +3,7 @@ return {
 	"akinsho/bufferline.nvim",
 	version = "*", -- Install the latest stable version
 	dependencies = "nvim-tree/nvim-web-devicons", -- Optional: For file icons
+	lazy = false,
 	config = function()
 		require("bufferline").setup({
 			options = {

@@ -1,15 +1,6 @@
 -- [[ Setting keymaps ]]
 require("config/keymaps")
 
--- [[ Vim Schedules ]]
-require("config/schedules")
-
--- [[ Functions / Utilities ]]
-require("config/functions")
-
--- [[ Autocommands ]]
-require("config/autocmds")
-
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -46,3 +37,12 @@ require("lazy").setup({
 		},
 	},
 })
+
+-- [[ Vim Schedules ]]
+require("config/schedules")
+
+-- [[ Functions / Utilities ]]
+require("config/functions")
+
+-- [[ Autocommands ]]
+require("config/autocmds")
